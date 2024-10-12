@@ -31,7 +31,7 @@ const apiUrl = "https://script.google.com/macros/s/AKfycbwucFsgQA4K6EUwVDR8qNNFU
 
 // Register the service worker and Firebase Cloud Messaging (FCM)
 if ('serviceWorker' in navigator && 'PushManager' in window) {
-    navigator.serviceWorker.register('./firebase-messaging-sw.js')
+    navigator.serviceWorker.register('/ProvaOrgPush5/firebase-messaging-sw.js')
         .then(registration => {
             console.log('Service Worker registered');
             requestNotificationPermission();
